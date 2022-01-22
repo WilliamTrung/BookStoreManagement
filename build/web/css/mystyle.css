@@ -1,0 +1,143 @@
+body{
+    min-width: 500px;
+
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+}
+.col-35 {
+  -ms-flex: 35%; /* IE10 */
+  flex: 35%;
+}
+.col-40 {
+  -ms-flex: 40%; /* IE10 */
+  flex: 40%;
+}
+.col-45 {
+  -ms-flex: 45%; /* IE10 */
+  flex: 45%;
+}
+.col-50 {
+  -ms-flex: 45%; /* IE10 */
+  flex: 45%;
+}
+
+.col-60 {
+  -ms-flex: 55%; /* IE10 */
+  flex: 55%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+} 
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+.center {
+  display: block;
+  margin-top:10px;
+  margin:auto;
+  width: 100%;
+    left: 0;
+    bottom: 0;
+}
+.wrapper {
+    -ms-flex: 45%; /* IE10 */
+    flex: 45%;
+    display: flex;
+    align-items: flex-end;
+}
+#quantityIn{
+    width: 82%;
+    padding: inherit;
+    font-size: larger;
+}
+#quantityUpdate{
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
